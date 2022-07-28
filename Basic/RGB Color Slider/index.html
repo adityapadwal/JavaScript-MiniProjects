@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RGB Color Slider</title>
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    <h3><b>RBG Color Changer!</b></h3>
+       <div class="wrapper">
+           <b>R</b><input type="range" min="0" max="255" value="0" id="red" oninput="colors()">
+       </div>
+       <div class="wrapper">
+            <b>G</b><input type="range" min="0" max="255" value="0" id="green" oninput="colors()">
+        </div>
+        <div class="wrapper">
+            <b>B</b><input type="range" min="0" max="255" value="0" id="blue" oninput="colors()">
+        </div>
+        <span id="output">RGB (0, 0, 0)</span>
+
+        <script>
+            function colors(){
+                var red= document.getElementById("red").value;
+                var green = document.getElementById("green").value;
+                var blue = document.getElementById("blue").value;
+                document.body.style.backgroundColor = 
+                'rgb(' + red + ',' + green + ',' + blue + ')';
+                document.getElementById("output").innerHTML =  'RGB (' + red + ',' + green + ',' + blue + ')' ;
+            }
+        </script>
+   </div>
+</body>
+</html>
+
+<!-- 
+    <====================Notes=====================>
+    1. For Input
+        min , max 
+        type-> range
+        oninput function
+
+    2. document.body.style.backgroundColor method is not conventional
+        it is different (remember!)
+        eg. rgb(123,122,123)
+
+    3. InnerHTML as conventional as always! 
+ -->

@@ -1,0 +1,18 @@
+body{
+    background-color:black;
+}
+.collapse{
+    background-color:rgb(234, 234, 234);
+}
+.nav-item{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#home_india{
+text-align: center;
+margin-top: 0px;
+font-size: 50px;
+}
+.container{
+    padding-top: 30px;
+}

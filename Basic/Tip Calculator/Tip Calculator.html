@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tip Calculator!</title>
+    <link rel="stylesheet" href="Tip_Calculator.css">
+  </head>
+  <body>
+    <h1>Tip Calculator!</h1>
+    <form class="" action="index.html" method="post">
+      <h2>Enter Total Amount:</h2>
+      <input id='amount' type="text" name="" value="">
+      <h2>How would you rate the service ?</h2>
+      <select id='quality' class="" name="">
+        <option value="0.30">30% Outstanding! :)</option>
+        <option value="0.20">20% Good! :)</option>
+        <option value="0.15">15% It was OK :|</option>
+        <option value="0.10">10% Bad :(</option>
+        <option value="0.05">5% Terrible :(</option>
+      </select>
+      <h2>Split the bill between?</h2>
+      <input id='split' type="text" name="" value="">
+      <br>
+      <br>
+      <button type="button" onclick="calculate()" name="button">Go!!</button>
+      <h1>The amount to be paid by each is: <h1 id='ans'>Rs. 0.00</h1></h1>
+    </form>
+
+
+    <script type="text/javascript" src="Tip_Calculator.js"></script>
+  </body>
+</html>
